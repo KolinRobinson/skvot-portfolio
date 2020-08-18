@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('../assets/font/playfair/Playfairdisplayregular.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayregular.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display SemiBold'), local('PlayfairDisplay-SemiBold'), url('../assets/font/playfair/Playfairdisplaysemibold.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaysemibold.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaysemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url('../assets/font/playfair/Playfairdisplayitalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayitalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Medium Italic'), local('PlayfairDisplay-MediumItalic'), url('../assets/font/playfair/Playfairdisplaymediumitalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaymediumitalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaymediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display ExtraBold Italic'), local('PlayfairDisplay-ExtraBoldItalic'), url('../assets/font/playfair/Playfairdisplayextrabolditalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayextrabolditalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display ExtraBold'), local('PlayfairDisplay-ExtraBold'), url('../assets/font/playfair/Playfairdisplayextrabold.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayextrabold.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url('../assets/font/playfair/Playfairdisplayblack.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayblack.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Medium'), local('PlayfairDisplay-Medium'), url('../assets/font/playfair/Playfairdisplaymedium.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaymedium.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaymedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url('../assets/font/playfair/Playfairdisplaybolditalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaybolditalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaybolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display SemiBold Italic'), local('PlayfairDisplay-SemiBoldItalic'), url('../assets/font/playfair/Playfairdisplaysemibolditalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaysemibolditalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaysemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('../assets/font/playfair/Playfairdisplaybold.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplaybold.woff') format('woff'), url('../assets/font/playfair/Playfairdisplaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url('../assets/font/playfair/Playfairdisplayblackitalic.woff2') format('woff2'), url('../assets/font/playfair/Playfairdisplayblackitalic.woff') format('woff'), url('../assets/font/playfair/Playfairdisplayblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant Regular'), local('Assistant-Regular'), url('../assets/font/assistant/Assistant-Regular.woff2') format('woff2'), url('../assets/font/assistant/Assistant-Regular.woff') format('woff'), url('../assets/font/assistant/Assistant-Regular.eot') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant light'), local('Assistant-Light'), url('../assets/font/assistant/Assistant-Light.woff2') format('woff2'), url('../assets/font/assistant/Assistant-Light.woff') format('woff'), url('../assets/font/assistant/Assistant-Light.eot') format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant Bold'), local('Assistant-Bold'), url('../assets/font/assistant/Assistant-Bold.woff2') format('woff2'), url('../assets/font/assistant/Assistant-Bold.woff') format('woff'), url('../assets/font/assistant/Assistant-Bold.eot') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant SemiBold'), local('Assistant-SemiBold'), url('../assets/font/assistant/Assistant-SemiBold.woff2') format('woff2'), url('../assets/font/assistant/Assistant-SemiBold.woff') format('woff'), url('../assets/font/assistant/Assistant-SemiBold.eot') format('embedded-opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant ExtraBold'), local('Assistant-ExtraBold'), url('../assets/font/assistant/Assistant-ExtraBold.woff2') format('woff2'), url('../assets/font/assistant/Assistant-ExtraBold.woff') format('woff'), url('../assets/font/assistant/Assistant-ExtraBold.eot') format('embedded-opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: local('Assistant ExtraLight'), local('Assistant-ExtraLight'), url('../assets/font/assistant/Assistant-ExtraLight.woff2') format('woff2'), url('../assets/font/assistant/Assistant-ExtraLight.woff') format('woff'), url('../assets/font/assistant/Assistant-ExtraLight.eot') format('embedded-opentype');
+    font-weight: 200;
+    font-style: normal;
+}
