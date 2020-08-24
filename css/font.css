@@ -123,3 +123,31 @@
     font-weight: 200;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'TT2020Base';
+    src: local('TT2020Base'), local('TT2020Base'), url('../assets/font/TT2020Base/TT2020Base.woff2') format('woff2'), url('../assets/font/TT2020Base/TT2020Base.woff') format('woff'), url('../assets/font/TT2020Base/TT2020Base.eot') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pioneer';
+    src: local('Pioneer'), local('Pioneer'), url('../assets/font/pioneer/pioneer.woff2') format('woff2'), url('../assets/font/pioneer/pioneer.woff') format('woff'), url('../assets/font/pioneer/pioneer.eot') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Annabelle';
+    src: local('Annabelle'), local('Annabelle'), url('../assets/font/Annabelle/Annabelle.woff2') format('woff2'), url('../assets/font/Annabelle/Annabelle.woff') format('woff'), url('../assets/font/Annabelle/Annabelle.eot') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plaster-Regular';
+    src: local('Plaster-Regular'), local('Plaster-Regular'), url('../assets/font/plaster/Plaster-Regular.woff2') format('woff2'), url('../assets/font/plaster/Plaster-Regular.woff') format('woff'), url('../assets/font/plaster/Plaster-Regular.eot') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+}

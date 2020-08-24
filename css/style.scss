@@ -23,7 +23,7 @@ img {
 
 body {
     font-size: 24px;
-    font-family: "Assistant";
+    font-family: "TT2020Base";
     font-weight: 400;
     scroll-behavior: smooth;
     color: #000000;
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display";
+    font-family: "Pioneer";
     font-weight: 700;
 }
 
@@ -88,7 +88,8 @@ a {
 .sub-title {
     position: relative;
     display: inline-flex;
-    max-width: 605px;
+    max-width: 615px;
+    width: 100%;
     margin-bottom: 60px;
     &:before,
     &:after {
@@ -138,6 +139,46 @@ a {
     }
 }
 
+.visit-link-left {
+    padding-left: 35px;
+    position: relative;
+    transition: all .5s ease-in-out;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+    &::before {
+        width: 26px;
+        height: 26px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    &::after {
+        content: ' > ';
+        font-weight: bold;
+        font-size: 30px;
+        top: 0;
+        left: 4px;
+        transform: rotate(180deg);
+    }
+    &:hover::before {
+        border-color: var(--main-bg-color);
+        transition: all .5s ease-in-out;
+    }
+}
+
+.font-annabelle {
+    font-family: "Annabelle" !important;
+    font-weight: 500;
+}
+
+.font-plaster {
+    font-family: "Plaster-Regular" !important;
+}
+
 
 /* Header start */
 
@@ -147,7 +188,7 @@ header a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     color: white;
@@ -391,7 +432,7 @@ header {
 }
 
 .nav__top {
-    background: rgba(7, 5, 5, 0.3);
+    background: rgba(7, 5, 5, 0);
     transition: all 1s ease-in-out;
     &--wrapper {
         padding: 15px 0;
@@ -756,6 +797,45 @@ header {
                     }
                 }
             }
+        }
+    }
+    &-typography {
+        background-color: #F4F4F4;
+        padding: 90px 0 60px;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__blocks {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &__img {
+            max-width: 440px;
+        }
+    }
+    &-footer {
+        padding: 90px 0 0;
+        color: white;
+        background: #000;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 90px 0 45px;
+            a {
+                color: white;
+            }
+        }
+        &__img {
+            max-width: 440px;
         }
     }
 }
