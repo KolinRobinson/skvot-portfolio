@@ -1346,6 +1346,8 @@ header {
 }
 
 .error_portfolio {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: error_portfolio;
@@ -1378,7 +1380,28 @@ header {
   transition: all .5s ease-in;
 }
 
+.error_portfolio-active .error_instagram, .error_portfolio-active .error_telegram, .error_portfolio-active .error_info, .error_portfolio-active .error_portfolio {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background: #FFFFFF;
+  color: #000;
+}
+
+.error_portfolio-active .error_instagram a, .error_portfolio-active .error_telegram a, .error_portfolio-active .error_info a, .error_portfolio-active .error_portfolio a {
+  color: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_portfolio-active .error_top {
+  color: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 .error_info {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: error_info;
@@ -1411,7 +1434,28 @@ header {
   transition: all .5s ease-in;
 }
 
+.error_info-active .error_instagram, .error_info-active .error_telegram, .error_info-active .error_info, .error_info-active .error_portfolio {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background: #800009;
+  color: #FFFFFF;
+}
+
+.error_info-active .error_instagram a, .error_info-active .error_telegram a, .error_info-active .error_info a, .error_info-active .error_portfolio a {
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_info-active .error_top {
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 .error_instagram {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: error_instagram;
@@ -1444,7 +1488,28 @@ header {
   transition: all .5s ease-in;
 }
 
+.error_instagram-active .error_instagram, .error_instagram-active .error_telegram, .error_instagram-active .error_info, .error_instagram-active .error_portfolio {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background: #B73030;
+  color: #000;
+}
+
+.error_instagram-active .error_instagram a, .error_instagram-active .error_telegram a, .error_instagram-active .error_info a, .error_instagram-active .error_portfolio a {
+  color: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_instagram-active .error_top {
+  color: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 .error_telegram {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: error_telegram;
@@ -1477,6 +1542,25 @@ header {
   transition: all .5s ease-in;
 }
 
+.error_telegram-active .error_instagram, .error_telegram-active .error_telegram, .error_telegram-active .error_info, .error_telegram-active .error_portfolio {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background: #EF635A;
+  color: #FFFFFF;
+}
+
+.error_telegram-active .error_instagram a, .error_telegram-active .error_telegram a, .error_telegram-active .error_info a, .error_telegram-active .error_portfolio a {
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_telegram-active .error_top {
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 .error_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1495,18 +1579,30 @@ header {
   height: 100%;
 }
 
-.error_instagram {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: error_instagram;
-  background: #B73030;
+.error_block > a {
+  margin-top: 10px;
 }
 
-.error_telegram {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: error_telegram;
-  background: #EF635A;
+.error_top {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 98vw;
+  height: 98vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 /* error end*/
