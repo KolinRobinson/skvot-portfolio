@@ -1331,4 +1331,183 @@ header {
 }
 
 /* single-work end */
+/* error start*/
+.error {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "error_portfolio error_info" "error_telegram error_instagram";
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.error_portfolio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: error_portfolio;
+  background: #FFFFFF;
+  color: #000;
+}
+
+.error_portfolio a {
+  color: #000;
+  position: relative;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_portfolio a:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_portfolio a:hover:before {
+  width: 100%;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: error_info;
+  background: #800009;
+  color: #FFFFFF;
+}
+
+.error_info a {
+  color: #FFFFFF;
+  position: relative;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_info a:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_info a:hover:before {
+  width: 100%;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_instagram {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: error_instagram;
+  background: #B73030;
+  color: #000;
+}
+
+.error_instagram a {
+  color: #000;
+  position: relative;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_instagram a:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_instagram a:hover:before {
+  width: 100%;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_telegram {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: error_telegram;
+  background: #EF635A;
+  color: #FFFFFF;
+}
+
+.error_telegram a {
+  color: #FFFFFF;
+  position: relative;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_telegram a:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_telegram a:hover:before {
+  width: 100%;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.error_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.error_instagram {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: error_instagram;
+  background: #B73030;
+}
+
+.error_telegram {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: error_telegram;
+  background: #EF635A;
+}
+
+/* error end*/
 /*# sourceMappingURL=style.css.map */
