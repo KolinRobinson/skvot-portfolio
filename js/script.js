@@ -1,10 +1,10 @@
 'use strict'
-// let burger = document.querySelector('.burger'),
-//     header = document.querySelector('header');
+let burger = document.querySelector('.burger'),
+    header = document.querySelector('header');
 
-// burger.addEventListener('click', () => {
-//     header.classList.toggle('header__active');
-// });
+burger.addEventListener('click', () => {
+    header.classList.toggle('header__active');
+});
 // error start
 const errorLink = document.querySelectorAll('.error_link');
 
