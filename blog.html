@@ -195,6 +195,31 @@
     <script src="https://cdn.jsdelivr.net/npm/contentful@5.0.1/dist/contentful.browser.min.js"></script>
     <script src="./js/script.js">
     </script>
+    <script>
+        let el = document.querySelector('.blog');
+
+        window.addEventListener('wheel', function() {
+            el.scrollLeft += (event.deltaY * -0.01) * 50;
+        })
+
+        window.addEventListener('load', function() {
+
+            let lastX = 0;
+
+            let ok = false;
+            el.onmousedown = function(e) {
+                ok = true;
+            };
+            document.onmouseup = function(e) {
+                ok = false;
+            };
+            document.onmousemove = function(e) {
+                if (ok) el.scrollLeft -= e.clientX - lastX;
+                lastX = e.clientX;
+            }
+
+        });
+    </script>
 </body>
 
 </html>

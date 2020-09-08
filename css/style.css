@@ -1865,6 +1865,7 @@ a.periodic-element {
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
+  overflow: hidden;
 }
 
 .blog h1 {
