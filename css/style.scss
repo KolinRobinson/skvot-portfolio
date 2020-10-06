@@ -27,7 +27,6 @@ body {
     font-weight: 400;
     scroll-behavior: smooth;
     color: #000000;
-    background: lightgray;
 }
 
 html {
@@ -52,9 +51,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2em !important;
+    font-size: 2em;
     @media screen and (max-width: 500px) {
-        font-size: 1.65em !important;
+        font-size: 1.65em;
     }
 }
 
@@ -207,12 +206,20 @@ header {
     width: 100%;
     color: white;
     z-index: 100;
+    background: rgba(0, 0, 0, 0);
 }
 
 .header__active {
     .nav__top {
         background: rgba(0, 0, 0, 1);
         transition: all 1s ease-in-out;
+        &--wrapper {
+            .logo {
+                &__link {
+                    color: white;
+                }
+            }
+        }
         .burger {
             cursor: pointer;
             display: flex;
@@ -457,15 +464,17 @@ header {
             z-index: 101;
             &__link {
                 display: flex;
-                font-family: "Playfair Display", sans-serif;
+                font-family: "TT2020Base", sans-serif;
                 font-weight: 700;
                 font-size: 32px;
+                color: black;
                 img {
                     width: 100px;
                 }
             }
         }
         .burger {
+            color: black;
             cursor: pointer;
             display: flex;
             z-index: 101;
@@ -481,7 +490,7 @@ header {
                     position: absolute;
                     width: 20px;
                     height: 3px;
-                    background-color: white;
+                    background-color: black;
                 }
                 &:after {
                     top: 5px;
@@ -535,7 +544,7 @@ header {
                     content: 'menu';
                     left: 0;
                     width: 65px;
-                    color: white;
+                    color: black;
                     animation: burgerName1 1s ease-in-out forwards;
                     @keyframes burgerName1 {
                         0% {
@@ -658,12 +667,6 @@ header {
 
 
 /* Header end */
-
-
-/* Home start */
-
-
-/* Home End */
 
 
 /* Single-work start */
@@ -914,7 +917,7 @@ aside.context {
     font-size: 5rem;
     width: 100%;
     text-align: center;
-    margin: 2rem 0 3rem 0;
+    margin: 4rem 0 3rem 0;
     @media screen and (max-width: 500px) {
         font-size: 3rem;
     }
@@ -975,7 +978,7 @@ $color2) {
         transition: 0.8s ease 600ms;
     }
     .description {
-        font: 600 12px "Assistant", sans-serif;
+        font: 600 12px "TT2020Base", sans-serif;
         margin-top: -0.2em;
     }
     &:after {
@@ -1034,12 +1037,12 @@ a.periodic-element {
 }
 
 .non-active {
-    @include background-gradient(#e4e3e3,
-    #d1d1d1);
+    @include background-gradient(#EF635A,
+    #B73030);
     .title,
     .description {
-        @include text-gradient(#e4e3e3,
-        #d1d1d1);
+        @include text-gradient(#EF635A,
+        #B73030);
     }
 }
 
@@ -1135,16 +1138,169 @@ a.periodic-element {
     }
     &__wrapper {
         display: flex;
+        align-items: center;
+        justify-content: center;
         @media screen and (max-width: 500px) {
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
     }
 }
 
 
 /*portfolio end*/
+
+
+/* contact */
+
+.contact {
+    &__title {
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
+        margin: 5rem 0 7rem 0;
+        @media screen and (max-width: 500px) {
+            font-size: 3rem;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 750px) {
+            flex-direction: column;
+        }
+        &--info {
+            display: flex;
+            flex: 1 1;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: 450px) {
+                flex-direction: column-reverse;
+            }
+            .social {
+                &_link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    @media screen and (max-width: 450px) {
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                    a {
+                        margin-bottom: 2rem;
+                        cursor: pointer;
+                        z-index: 100;
+                    }
+                }
+                &_svg {
+                    transform: scale(1);
+                    cursor: pointer !important;
+                    transition: .5s all ease-in-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    svg {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .contact {
+                &_link {
+                    display: flex;
+                    align-items: start;
+                    width: 70%;
+                    flex-direction: column;
+                    @media screen and (max-width: 450px) {
+                        width: 100%;
+                    }
+                    &-block {
+                        margin-bottom: 3rem;
+                        h2 {
+                            font-size: 3rem;
+                            margin-bottom: 2rem;
+                            @media screen and (max-width: 1000px) {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: 1000px) {
+                max-width: 320px;
+            }
+            input,
+            label {
+                margin-bottom: 1.5rem;
+                font-family: 'TT2020Base';
+                #legacy {
+                    margin-right: 1rem;
+                    margin-bottom: 0;
+                    background-color: black;
+                }
+                a {
+                    text-decoration: underline;
+                }
+                @media screen and (max-width: 750px) {
+                    margin-bottom: 2rem;
+                }
+            }
+            label {
+                @media screen and (max-width: 450px) {
+                    font-size: 1rem;
+                }
+            }
+            .form {
+                &_title {
+                    font-size: 3rem;
+                    margin-bottom: 3rem;
+                    @media screen and (max-width: 1000px) {
+                        font-size: 2rem;
+                    }
+                }
+                &_input {
+                    width: 100%;
+                    max-width: 420px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    &:focus {
+                        background: lightgray;
+                    }
+                    &:valid {
+                        border-bottom: 1px solid greenyellow;
+                    }
+                    &:invalid {
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid red;
+                    }
+                }
+                &_submit {
+                    background-color: black;
+                    color: white;
+                    border-radius: 20px;
+                    width: 210px;
+                    height: 40px;
+                    font-family: "TT2020Base";
+                    font-size: 1.2rem;
+                    border: none;
+                    margin-left: auto;
+                    margin-right: 19%;
+                    @media screen and (max-width: 1000px) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /* error start*/
@@ -1362,13 +1518,29 @@ a.periodic-element {
         justify-content: space-between;
         width: 97vw;
         height: 97vh;
+        font-size: 5rem;
         flex-direction: column;
         transition: all .5s ease-in;
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 1000px) {
             width: 98vw;
-            height: 99vh;
+            height: 97vh;
+            top: 1vh;
             letter-spacing: -1.3px;
-            font-size: 2em;
+            font-size: 4rem;
+        }
+        @media screen and (max-width: 640px) {
+            width: 98vw;
+            height: 97vh;
+            top: 1vh;
+            letter-spacing: -1.3px;
+            font-size: 3rem;
+        }
+        @media screen and (max-width: 450px) {
+            width: 98vw;
+            height: 97vh;
+            top: 1vh;
+            letter-spacing: -1.3px;
+            font-size: 1.3em;
         }
     }
 }

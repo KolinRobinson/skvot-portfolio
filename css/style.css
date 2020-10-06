@@ -35,7 +35,6 @@ body {
   font-weight: 400;
   scroll-behavior: smooth;
   color: #000000;
-  background: lightgray;
 }
 
 html {
@@ -63,12 +62,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2em !important;
+  font-size: 2em;
 }
 
 @media screen and (max-width: 500px) {
   h2 {
-    font-size: 1.65em !important;
+    font-size: 1.65em;
   }
 }
 
@@ -240,12 +239,17 @@ header {
   width: 100%;
   color: white;
   z-index: 100;
+  background: rgba(0, 0, 0, 0);
 }
 
 .header__active .nav__top {
   background: black;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+.header__active .nav__top--wrapper .logo__link {
+  color: white;
 }
 
 .header__active .nav__top .burger {
@@ -699,9 +703,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "TT2020Base", sans-serif;
   font-weight: 700;
   font-size: 32px;
+  color: black;
 }
 
 .nav__top--wrapper .logo__link img {
@@ -709,6 +714,7 @@ header {
 }
 
 .nav__top--wrapper .burger {
+  color: black;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,7 +737,7 @@ header {
   position: absolute;
   width: 20px;
   height: 3px;
-  background-color: white;
+  background-color: black;
 }
 
 .nav__top--wrapper .burger__icon:after {
@@ -845,7 +851,7 @@ header {
   content: 'menu';
   left: 0;
   width: 65px;
-  color: white;
+  color: black;
   -webkit-animation: burgerName1 1s ease-in-out forwards;
           animation: burgerName1 1s ease-in-out forwards;
 }
@@ -1043,8 +1049,6 @@ header {
 }
 
 /* Header end */
-/* Home start */
-/* Home End */
 /* Single-work start */
 .work-intro {
   width: 100%;
@@ -1440,7 +1444,7 @@ aside.context .explanation {
   font-size: 5rem;
   width: 100%;
   text-align: center;
-  margin: 2rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -1520,7 +1524,7 @@ aside.context .explanation {
 }
 
 .periodic-element .description {
-  font: 600 12px "Assistant", sans-serif;
+  font: 600 12px "TT2020Base", sans-serif;
   margin-top: -0.2em;
 }
 
@@ -1594,13 +1598,13 @@ a.periodic-element {
 }
 
 .non-active {
-  background: -webkit-gradient(linear, left top, right bottom, from(#e4e3e3), to(#d1d1d1));
-  background: linear-gradient(to bottom right, #e4e3e3 0%, #d1d1d1 100%);
+  background: -webkit-gradient(linear, left top, right bottom, from(#EF635A), to(#B73030));
+  background: linear-gradient(to bottom right, #EF635A 0%, #B73030 100%);
 }
 
 .non-active .title,
 .non-active .description {
-  background: -webkit-linear-gradient(#e4e3e3, #d1d1d1);
+  background: -webkit-linear-gradient(#EF635A, #B73030);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1743,6 +1747,12 @@ a.periodic-element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -1751,16 +1761,260 @@ a.periodic-element {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
 /*portfolio end*/
+/* contact */
+.contact__title {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  margin: 5rem 0 7rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  .contact__title {
+    font-size: 3rem;
+  }
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact__wrapper--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .contact__wrapper--info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.contact__wrapper--info .social_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 450px) {
+  .contact__wrapper--info .social_link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.contact__wrapper--info .social_link a {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.contact__wrapper--info .social_svg {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer !important;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.contact__wrapper--info .social_svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contact__wrapper--info .social_svg svg {
+  cursor: pointer;
+}
+
+.contact__wrapper--info .contact_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 450px) {
+  .contact__wrapper--info .contact_link {
+    width: 100%;
+  }
+}
+
+.contact__wrapper--info .contact_link-block {
+  margin-bottom: 3rem;
+}
+
+.contact__wrapper--info .contact_link-block h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__wrapper--info .contact_link-block h2 {
+    font-size: 2rem;
+  }
+}
+
+.contact__wrapper--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__wrapper--form {
+    max-width: 320px;
+  }
+}
+
+.contact__wrapper--form input,
+.contact__wrapper--form label {
+  margin-bottom: 1.5rem;
+  font-family: 'TT2020Base';
+}
+
+.contact__wrapper--form input #legacy,
+.contact__wrapper--form label #legacy {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  background-color: black;
+}
+
+.contact__wrapper--form input a,
+.contact__wrapper--form label a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+  .contact__wrapper--form input,
+  .contact__wrapper--form label {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__wrapper--form label {
+    font-size: 1rem;
+  }
+}
+
+.contact__wrapper--form .form_title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__wrapper--form .form_title {
+    font-size: 2rem;
+  }
+}
+
+.contact__wrapper--form .form_input {
+  width: 100%;
+  max-width: 420px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.contact__wrapper--form .form_input:focus {
+  background: lightgray;
+}
+
+.contact__wrapper--form .form_input:valid {
+  border-bottom: 1px solid greenyellow;
+}
+
+.contact__wrapper--form .form_input:invalid {
+  border: none;
+  background: none;
+  border-bottom: 1px solid red;
+}
+
+.contact__wrapper--form .form_submit {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 210px;
+  height: 40px;
+  font-family: "TT2020Base";
+  font-size: 1.2rem;
+  border: none;
+  margin-left: auto;
+  margin-right: 19%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__wrapper--form .form_submit {
+    margin-right: 0;
+  }
+}
+
 /* error start*/
 .error {
   display: -ms-grid;
@@ -2037,6 +2291,7 @@ a.periodic-element {
           justify-content: space-between;
   width: 97vw;
   height: 97vh;
+  font-size: 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2045,12 +2300,33 @@ a.periodic-element {
   transition: all .5s ease-in;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1000px) {
   .error_top {
     width: 98vw;
-    height: 99vh;
+    height: 97vh;
+    top: 1vh;
     letter-spacing: -1.3px;
-    font-size: 2em;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .error_top {
+    width: 98vw;
+    height: 97vh;
+    top: 1vh;
+    letter-spacing: -1.3px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .error_top {
+    width: 98vw;
+    height: 97vh;
+    top: 1vh;
+    letter-spacing: -1.3px;
+    font-size: 1.3em;
   }
 }
 
